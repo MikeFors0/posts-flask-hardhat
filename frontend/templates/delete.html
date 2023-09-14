@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<form method="post" class="form">
+    <div class="in-form">
+        <h1>Delet a Post</h1>
+        <input type="password" name="key" placeholder="Enter the secret key" title="Please enter your secret key" required>
+    </div>
+    <button type="submit">delete</button>
+</form>
+<div class="flash">
+    {% for message in get_flashed_messages() %}
+    <div>{{ message }}</div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<style>
+    #zatemnenie {
+      background: rgba(102, 102, 102, 0.5);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+    #okno {
+      width: 600px;
+      height: 200px;
+      text-align: center;
+      padding: 15px 10px;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: #1c1c1c;
+    }
+    #okno p, #okno h1, #okno h2 {
+        margin: 10px;
+    }
+    #zatemnenie:target {display: block;}
+    .close {
+      display: inline-block;
+      color: white;
+      padding: 5px 12px;
+      margin: 70px;
+      border-radius: 15px;
+      text-decoration: none;
+      background: black;
+      cursor:pointer;
+    }
+    .close:hover {background: white; color: black;}
+
+  </style>
+<div>
+    <div id="zatemnenie">
+        <div id="okno">
+            <h1>Profile</h1>
+            <h2>Your Login:  {{res[0]}}</h2>
+            <p>Your addres account:   {{res[1]}}</p>
+            <a href="#" class="close">Закрыть</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

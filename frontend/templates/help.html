@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block main %}
+<form class="help-conteiner">
+    <header class="help-header">
+        <h1>HELP</h1>
+    </header>
+    <main class="help-main">
+        <div class="title">
+            <p>HELPER</p>
+        </div>
+        <div class="chat">
+            <p class="msg">Это бот для помощи Вам! Введите команду /help</p>
+            <p class="my msg">Написать вопрос...</p>
+            <div id="chat"></div>
+        </div>
+        </main>
+    <div class="help-footer">
+    <div class="input-message">
+        <input id="text" type="text" title="Напечатать сообщение" placeholder="Печатаю..." required>
+        <button id="send" type="submit"  title="Отправить сообщение">
+            <p>Отправить</p>
+        </button>
+    </div>
+    </div>
+    <script src="../static/script.js"></script>
+</form>
+{% endblock %}

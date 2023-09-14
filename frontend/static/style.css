@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+body {
+    background-color: #1c1c1c;
+}
+
+.between {
+    grid-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s;
+    margin-right: 15px;
+    padding: 7px 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 100px;
+}
+
+.menu a:hover{
+    border-color: #fff;
+}
+
+/* .content {
+    background-color: #1c1c1c;
+    display: flex;
+    min-height: 400px;
+	width: 100%;
+	margin: 60px auto;
+	max-width: 800px;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* .post-content {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-post {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.block-post p, h3 {
+    margin: 10px 60px;
+}
+
+
+.block-post a {
+    text-decoration: none;
+    margin: 5px;
+} */
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    margin-top: 150px;
+}
+
+
+.in-form {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    grid-gap: 7px;
+}
+
+.in-form h1 {
+    text-align: center;
+    margin: 5px ;
+}
+
+.in-form label {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.in-form input {
+    background-color:#1c1c1c;
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px;    
+}
+
+
+.form button {
+    margin-top: 10px;
+    padding: 7px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    transition: 0.3s;
+}
+
+
+.form button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 20px 5px black;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    width: 1200px;
+    
+}
+
+
+.post {
+    border-radius: 10px;
+    padding: 20px 10px;
+    border: 2px solid white;
+    background-color: #1c1c1c;
+    margin: 5px;
+}
+
+.content .posts .post h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.content .posts .post p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgb(255, 232, 129);
+}
+
+.content .posts .post a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #0086c4;
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid #0086c4;
+    width: fit-content;
+    transition: all 0.3s;
+    margin: 2px;
+}
+
+.content .posts .post a:hover  {
+    scale: 1.1;
+    box-shadow: 0 0 20px 1px #0086c4;
+}
+
+
+.flash {
+    display: block;
+    color: red;
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+
+.in-con {
+    border: 2px solid white ;
+    color: white;
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.in-con-post {
+    margin-top: 100px;
+}
+
+.in-con-post span, .in-con-post p {
+    margin: 20px;
+}
+
+
+.footer {
+    background-color: black;
+    padding: 10px 10px;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    color: #fff;
+}
+
+
+.help-conteiner {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+.help-header {
+    margin-top: 15px;
+    padding: 15px 10px;
+    border-radius: 150px 150px 0 0 ;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.help-main {
+    /* прокрутка  */
+    overflow: scroll;
+    border: 5px solid black;
+    padding: 10px 20px;
+    border-radius: 1px;
+    height: 450px;
+    background-color: #fff;
+    font-size: 20px;
+    color: black;
+}
+
+
+.help-main .title {
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+    background-color:black;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    /* привязанная позиция  */
+    position: sticky;
+    /* к вверху */
+    top: 0;
+}
+
+
+.help-main .title p {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+
+.help-main .msg {
+    display: flex;
+    font-size: 17px;
+    transition: 0.1s;
+    justify-content: space-between;
+    float: left;
+    min-width: 400px;
+    max-width: 80%;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 0 100px 100px 100px;
+    background-color: black;
+    padding: 10px;
+}
+
+
+.help-main .msg {
+    display: flex;
+    transition: 0.1s;
+    justify-content: space-between;
+    float: left;
+    min-width: 300px;
+    max-width: 80%;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 0 100px 100px 100px;
+    background-color: white;
+    padding: 10px;
+    color: black;
+}
+
+
+.help-main .my {
+    border: 3px solid black;
+    float: right;
+    border-radius: 100px 0 150px 100px;
+}
+
+.help-footer {
+    border:  5px solid black;
+    border-radius: 0 0 10px 10px;
+    background-color: black;
+}
+
+.help-footer .input-message {
+    display: flex;
+}
+
+.help-footer .input-message input {
+    border: none;
+    outline: none;
+    border-radius: 100px 0 0 100px;
+    border-right: 3px solid black;
+    padding: 10px 15px;
+    font-size: 17px;
+    color: black;
+}
+
+.help-footer .input-message button {
+    display: flex;
+    grid-gap: 10px;
+    border-radius: 0 100px 100px 0;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(61, 61, 230);
+}
+
+.help-footer .input-message button:hover {
+    color: black;
+    background-color: rgb(233, 45, 45);
+}
+
+.help-footer .input-message button img {
+    width: 35px;
+}

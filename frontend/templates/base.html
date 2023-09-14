@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <title>POST</title>
+</head>
+<body>
+    <header class="header between">
+        <nav class="menu between">
+        {% if session.get('user') !=  None %}
+            <a href="/">PostBlog</a>
+            <a href="/lk#zatemnenie">Profile</a>
+            <a href="{{url_for('create')}}">New Post</a>
+            <a href="/help">Help</a>
+            <a href="/logout">Logout</a>
+        {% else %}
+            <a href="/">PostBlog</a>
+            <a href="/login">Login</a>
+            <a href="/reg">Registred</a>
+            <a href="/help">help</a>
+        {% endif %}    
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            {% block main %}
+            {% endblock %}
+        </div>
+    </main>
+    <footer class="footer">
+        &copy; Смолькин Матвей ОБ-21-01 & Малащицский Егор ОБ-21-01
+    </footer>
+</body>
+</html>
